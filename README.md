@@ -13,7 +13,7 @@ This repository contains the LaTeX file used in Overleaf to create the paper sub
 First, clone the repository:
 
 ```sh
-git clone https://github.com/yourusername/Afitwchinkame.git
+git clone https://github.com/SantiPhys/Afitwchinkame.git
 cd Afitwchinkame
 ```
 
