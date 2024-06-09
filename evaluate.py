@@ -121,20 +121,21 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 7), dpi=100)
 # Plot edit distance against number of kaijus
 ax1.plot(n_kaijus_L2SVM, lev_ratio_L2SVM, marker='o', color='b', linestyle='-', linewidth=2, markersize=8, label='L2')
 ax1.plot(n_kaijus_L1SVM, lev_ratio_L1SVM, marker='o', color='r', linestyle='-', linewidth=2, markersize=8, label='L1')
-ax1.set_title('Levenshtein Distance Ratio vs. Number of Kaijus', fontsize=14)
+ax1.set_title('$L_{ratio}$ vs. Number of Kaijus', fontsize=14)
 ax1.set_xlabel('Number of Kaijus', fontsize=12)
-ax1.set_ylabel('LDR', fontsize=12)
+ax1.set_ylabel('$L_{ratio}$', fontsize=12)
 ax1.grid(True, linestyle='--', alpha=0.6)
 ax1.legend()
 
 # Plot number of unknown inputs against number of kaijus
 ax2.plot(n_kaijus_L2SVM, unk_ratio_L2SVM, marker='o', color='g', linestyle='-', linewidth=2, markersize=8, label='L2')
 ax2.plot(n_kaijus_L1SVM, unk_ratio_L1SVM, marker='o', color='orange', linestyle='-', linewidth=2, markersize=8, label='L1')
-ax2.set_title('Unknown Ratio vs. Number of Kaijus', fontsize=14)
+ax2.set_title('$U_{ratio}$ vs. Number of Kaijus', fontsize=14)
 ax2.set_xlabel('Number of Kaijus', fontsize=12)
-ax2.set_ylabel('Unknown Ratio', fontsize=12)
+ax2.set_ylabel('$U_{ratio}$', fontsize=12)
 ax2.grid(True, linestyle='--', alpha=0.6)
 ax2.legend()
+
 
 # Show the plots and save figures
 plt.tight_layout()
