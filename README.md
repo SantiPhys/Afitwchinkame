@@ -56,4 +56,3 @@ python evaluate.py
 - `generate_data.py`: Script to generate necessary data.
 - `run_kytea.sh`: Script to create SVM models using KyTea.
 - `evaluate.py`: Script to generate results.
-```
